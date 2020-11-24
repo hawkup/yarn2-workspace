@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+dist
+
+build.log
+build-error.log
+
+# Yarn plug n play
+# not using Zero-Installs
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
