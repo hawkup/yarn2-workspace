@@ -1312,6 +1312,9 @@ __metadata:
 "@internal/shared@workspace:packages/shared":
   version: 0.0.0-use.local
   resolution: "@internal/shared@workspace:packages/shared"
+  dependencies:
+    "@types/string-width": ^4
+    string-width: ^4.2.0
   languageName: unknown
   linkType: soft
 
@@ -1321,6 +1324,8 @@ __metadata:
   dependencies:
     "@internal/shared": "workspace:packages/shared"
     microbundle: ^0.12.4
+    preact: ^10.5.7
+    preact-custom-element: ^4.2.1
   languageName: unknown
   linkType: soft
 
@@ -1328,8 +1333,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@internal/wc-text@workspace:packages/wc-text"
   dependencies:
-    "@internal/shared": "workspace:packages/shared"
     microbundle: ^0.12.4
+    preact: ^10.5.7
+    preact-custom-element: ^4.2.1
   languageName: unknown
   linkType: soft
 
@@ -1461,6 +1467,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/string-width@npm:^4":
+  version: 4.0.1
+  resolution: "@types/string-width@npm:4.0.1"
+  dependencies:
+    string-width: "*"
+  checksum: 1bcfec3b08b85ee6a0764761c3de72ff4f06fe38bfc2a988e960ca551dc450b8e15d00e1e38c62353fa6c60e4321a2bb1dbb89341638b4c7c28a5828e6815c37
+  languageName: node
+  linkType: hard
+
 "acorn@npm:^7.1.0":
   version: 7.4.1
   resolution: "acorn@npm:7.4.1"
@@ -1481,6 +1496,13 @@ __metadata:
   version: 2.1.1
   resolution: "ansi-regex@npm:2.1.1"
   checksum: 93a53c923fd433f67cd3d5647dffa6790f37bbfb924cf73ad23e28a8e414bde142d1da260d9a2be52ac4aa382063196880b1d40cf8b547642c746ed538ebf6c4
+  languageName: node
+  linkType: hard
+
+"ansi-regex@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "ansi-regex@npm:5.0.0"
+  checksum: cbd9b5c9dbbb4a949c2a6e93f1c6cc19f0683d8a4724d08d2158627be6d373f0f3ba1f4ada01dce7ee141f2ba2628fbbd29932c7d49926e3b630c7f329f3178b
   languageName: node
   linkType: hard
 
@@ -2165,6 +2187,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"emoji-regex@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "emoji-regex@npm:8.0.0"
+  checksum: 87cf3f89efb8ba028075b3dc1713e2c5609af94cbc129b1f00c3113d01dbe4bf85c9d971e75a98bf8a8508131727682ce929e4bd70e9022af4fd47d75e9507de
+  languageName: node
+  linkType: hard
+
 "emojis-list@npm:^3.0.0":
   version: 3.0.0
   resolution: "emojis-list@npm:3.0.0"
@@ -2665,6 +2694,13 @@ __metadata:
   version: 0.3.1
   resolution: "is-directory@npm:0.3.1"
   checksum: e921dc18177e0ec9d1f05637b356d2974f2dacf9e120a90243a95f02bdd24a9c8bf7eb30ae51a7aa8d0e5dbb8a845fd58b105626535b693154d602f4618a8f5a
+  languageName: node
+  linkType: hard
+
+"is-fullwidth-code-point@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "is-fullwidth-code-point@npm:3.0.0"
+  checksum: a01a19ecac34386ae3a4e801c5639d6e31082d1ddc418e7cd96317fef3c8b24ec8531558e9d3d35b33551ab9c5cf20bf2cdefa583927b7ff60c27c8d7c216063
   languageName: node
   linkType: hard
 
@@ -3719,6 +3755,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"preact-custom-element@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "preact-custom-element@npm:4.2.1"
+  peerDependencies:
+    preact: 10.x
+  checksum: 770a74e2237cea0dfcdbf6a8999b2df5a113e99fd5d1c5dcb941e0de4045ba1baab231f349e69cb62e1159480d5325532e3fbfd607aaaa5ef55a0039c2ce0c6e
+  languageName: node
+  linkType: hard
+
+"preact@npm:^10.5.7":
+  version: 10.5.7
+  resolution: "preact@npm:10.5.7"
+  checksum: 80a1c49dd9074a0f0085454406abf161f3902d6f69cc7a33e9b3004f7e3ff8e913a2085e37c32dac820d310d7ce5be13dd87638526838ce6373c1a3fc2aab9ee
+  languageName: node
+  linkType: hard
+
 "pretty-bytes@npm:^3.0.0":
   version: 3.0.1
   resolution: "pretty-bytes@npm:3.0.1"
@@ -4132,6 +4184,17 @@ resolve@1.12.0:
   languageName: node
   linkType: hard
 
+"string-width@npm:*, string-width@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "string-width@npm:4.2.0"
+  dependencies:
+    emoji-regex: ^8.0.0
+    is-fullwidth-code-point: ^3.0.0
+    strip-ansi: ^6.0.0
+  checksum: cf1e8acddf3d6d6e9e168628cc58cf1b33b1e7e801af2a0c18316e4e8beb62361eb9aad6eab2fc86de972ab149cb7262aedc2a5d0c2ce28873c91b171cce84d7
+  languageName: node
+  linkType: hard
+
 "string.prototype.trimend@npm:^1.0.1":
   version: 1.0.3
   resolution: "string.prototype.trimend@npm:1.0.3"
@@ -4158,6 +4221,15 @@ resolve@1.12.0:
   dependencies:
     ansi-regex: ^2.0.0
   checksum: 98772dcf440d08f65790ee38cd186b1f139fa69b430e75f9d9c11f97058662f82a22c2ba03a30f502f948958264e99051524fbf1819edaa8a8bbb909ece297da
+  languageName: node
+  linkType: hard
+
+"strip-ansi@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "strip-ansi@npm:6.0.0"
+  dependencies:
+    ansi-regex: ^5.0.0
+  checksum: 10568c91cadbef182a807c38dfa718dce15a35b12fcc97b96b6b2029d0508ef66ca93fabddeb49482d9b027495d1e18591858e80f27ad26861c4967c60fd207f
   languageName: node
   linkType: hard
 

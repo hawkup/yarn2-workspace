@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@types/string-width": "^4",
+    "string-width": "^4.2.0"
+  }
 }

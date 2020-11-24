@@ -1,3 +1,8 @@
-import shared from '@internal/shared'
+import { h } from 'preact'
+import register from 'preact-custom-element'
 
-console.log(shared)
+const WCText = ({ text = '' }) => (
+  <p>{text}</p>
+)
+
+register(WCText, 'wc-text', ['text'])

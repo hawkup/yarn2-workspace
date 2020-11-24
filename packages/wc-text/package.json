@@ -9,7 +9,8 @@
     "build": "microbundle"
   },
   "devDependencies": {
-    "@internal/shared": "workspace:packages/shared",
-    "microbundle": "^0.12.4"
+    "microbundle": "^0.12.4",
+    "preact": "^10.5.7",
+    "preact-custom-element": "^4.2.1"
   }
 }
